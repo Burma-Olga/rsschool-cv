@@ -1,1 +1,1 @@
-https://Burma-Olga.github.io/rsschool-cv/cv
+https://Burma-Olga.github.io/rsschool-cv/
