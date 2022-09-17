@@ -1,25 +1,172 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
-    font-family: 'Roboto Slab', sans-serif;
+    font-family:'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #232222;
+    color: #383434;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
 }
-/* .main{
-    
-} */
-.mine{
-    background-color: gainsboro;
+* {
+    list-style: none;  
+    text-decoration: none;
+    padding-left: 0;
+    /* padding-bottom: 6px; */
+}
+.container{
+   max-width: 1440px;
+   margin: 0 auto; 
+
+}
+.header{
+    background-color: #9f9d9d;
+}
+
+.header_nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 20px;
+    margin: 0;
+}
+.header_nav-item{
+    padding: 5px 20px 0 0;
+}
+.header_nav-item a{
+    color:rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+.header_nav-item a:hover{
+    color: rgb(235, 10, 52);
+    transition: 0.5s;
+}
+.main{
+    display: flex;
+}
+.container_left{
+    background-color: #9f9d9d; 
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 20px;
 }
-.mine_image{
+.contacts, .language, .profile, .educacion, .skills, .code, .projects{
+    padding: 20px 0 20px;
+}
+.contacts_title:after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    left: 0;
+    right: 0;
+    background:rgba(255, 255, 255, 1);
+    border-radius: 5px;
+
+}
+.language_title:after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    left: 0;
+    right: 0;
+    background:rgba(255, 255, 255, 1);
+    border-radius: 5px;
+}
+.contacts_text-info, .language_text-info, .skills_text-info, .projekt_Link-text{
+    padding-bottom: 6px;
+}
+.container_right{
     padding: 20px;
-}   
+}
+.mine_title{
+    font-size: 50px;
+    font-weight: 600;
+}
+.mine_prof{
+    font-size: 20px;
+    font-weight: 400;
+}
+.contacts_title, .language_title{
+    color:rgba(255, 255, 255, 1);
+}
+.contacts_text-info, .language_text-info{
+    color:rgba(255, 255, 255, 1);
+}
+.profile_title:after, .skills_title:after, .projects_title:after, .education_title:after, .code_title:after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    left: 0;
+    right: 0;
+    background:#9f9d9d;
+    border-radius: 5px;
+}
 .profile_title, 
 .education_title, 
 .skills_title, 
 .language_title,
-.contacts_title{
+.contacts_title,
+.code_title,
+.projects_title
+{
     font-size: 24px;
     line-height: 38px;
+}
+.code_text-info{
+    border: solid #9f9d9d;
+    border-width: 1px;
+}
+.projekt_Link-text a{
+    color: #383434;
+}
+.projekt_Link-text a:hover{
+    color:rgb(235, 10, 52);
+    
+}
+.footer{
+    background-color: #9f9d9d;
+}
+.footer_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    line-height: 0;
+}
+.github_logo{
+    transition: .5s;
+    filter: invert(100%);
+    height: 50px;
+}
+.github_logo:hover{
+    filter: invert(0%);
+}
+.rsschool_logo{
+    transition: .5s;
+    filter: invert(100%);
+}
+.rsschool_logo:hover{
+    filter: invert(0%);
+}
+b{
+    color:rgb(235, 10, 52);
+}
+
+
+@media (max-width: 900px){
+.header_nav-list{
+    padding-left: 10px;
+}
 }
