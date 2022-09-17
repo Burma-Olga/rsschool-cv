@@ -8,75 +8,113 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="container">
-        <div class="mine">
-            <h2 class="mine_title">OLGA LAPTEVA</h2>  
-            <div class="mine_prof">
-            <p>WEB DEVELOPER</p>
+    <div class="container">
+        <header class="header">
+            <div class="header_container">
+                <nav class="nav">
+                    <ul class="header_nav-list">
+                        <li class="header_nav-item"><a href="#about">About</a></li>
+                        <li class="header_nav-item"><a href="#education">Education</a></li>
+                        <li class="header_nav-item"><a href="#skills">Skills</a></li>
+                        <li class="header_nav-item"><a href="#code">Code</a></li>
+                        <li class="header_nav-item"><a href="#projects">Projects</a></li>
+                        <li class="header_nav-item"><a href="#language">Language</a></li>
+                        <li class="header_nav-item"><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-        <div class="mine_image">
-            <img class="ava_image" src="Photo-Olga.png" alt="ava">
-        </div>
-    </section>
-    <main class="main">
-        <div class="profile">
-            <div class="profile_title">
-                <p>Profile</p>
+        </header>
+        <main class="main">
+        <section class="container_left">
+            <div class="mine_image">
+                <img class="ava_image" src="Photo-Olga.png" alt="ava">
             </div>
-            <div class="profile_text">
-                <p>There is no work experience, but there is a desire for change and determination</p>
-            </div>
-        </div>
-        <div class="educacion">
-            <div class="education_title">
-                <p>Education</p>
-            </div>
-            <div class="education_fext">
-                <p>In 2021 I graduated from the Grodno University, I received a second higher education, 
-                    I have a specialty software engineer</p>
-            </div>
-        </div>
-        <div class="skills">
-            <div class="skills_title">
-                <p>Skills</p>
-            </div>
-            <div class="skills_text">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Git</li>
+            <div class="contacts" id="contacts">
+                <h2 class="contacts_title">Contacts</h2>
+                <ul class="contacts_text">
+                    <li class="contacts_text-info">Location: Belarus, Grodno</li>
+                    <li class="contacts_text-info">Discord: Burma-Olga</li>
+                    <li class="contacts_text-info">Tel: +375297849292</li>
+                    <li class="contacts_text-info">Email: Burma_Olga@bk.ru</li>
                 </ul>
             </div>
-        </div>
-        <div class="language">
-            <div class="language_title">
-                <p>Language</p>
+            <div class="language" id="language">
+                <h2 class="language_title">Language</h2>
+                <ul class="language_text">
+                    <li class="language_text-info">English - B1</li>
+                    <li class="language_text-info">Polish - B1</li>
+                    <li class="language_text-info">Russian - native</li>
+                    <li class="language_text-info">Belorussian - native</li>
+                </ul>
             </div>
-            <ul class="language_text">
-                <li>English B1</li>
-            </ul>
-        </div>
-        <div class="contacts">
-            <div class="contacts_title">
-                <p>Contacts</p>
+        </section>  
+        <section class="container_right">
+            <div class="mine">
+                <h2 class="mine_title">Olga Lapteva</h2>  
+                <div class="mine_prof">
+                <p>Front-End Developer</p>
+                </div>
             </div>
-            <ul class="contacts_text">
-                <li class="contacts_text-link">
-                    <a class="contacts_text-link contacts_text-link--discord">Burma-Olga</a>
-                </li>
-                <li class="contacts_text-link">
-                    <a class="contacts_text-link contacts_text-link--github">Burma-Olga</a>
-                </li>
-                <li class="contacts_text-link">
-                    <a class="contacts_text-link contacts_text-link--phone">+375297849292</a>
-                </li>
-                <li class="contacts_text-link">
-                    <a class="contacts_text-link contacts_text-link--email">Burma_Olga@bk.ru</a>
-                </li>
-            </ul>
-        </div>
-    </main>
+            <div class="profile" id="about">
+                <h2 class="profile_title">About me</h2>
+                <div class="profile_text">
+                    <p>There is no work experience, but there is a desire for change and determination</p>
+                </div>
+            </div>
+            <div class="educacion" id="education">
+                <h2 class="education_title">Education</h2>
+                <div class="education_fext">
+                    <p>In 2021 I graduated from the Grodno University, I received a second higher education, 
+                        I have a specialty software engineer</p>
+                </div>
+            </div>
+            <div class="skills" id="skills">
+                <h2 class="skills_title">Skills</h2>
+                <ul class="skills_text">
+                    <li class="skills_text-info">HTML</li>
+                    <li class="skills_text-info">CSS</li>
+                    <li class="skills_text-info">JavaScript</li>
+                    <li class="skills_text-info">Git</li>
+                </ul>
+            </div>
+            <div class="code" id="code">
+                <h2 class="code_title">Code example</h2>
+                <div class="code_text">
+                    <pre class="code_text-info">
+                        <code class="code_js">
+                            function isPrime(num) {
+                                let sqrt = Math.sqrt(num);
+                                if(num<=1){
+                                return false;
+                                }
+                                for(let i=2; i <= sqrt; i++){
+                                if(num % i === 0){
+                                    return false;
+                                }
+                                }
+                                return true;
+                            }
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div class="projects" id="projects">
+                <h2 class="projects_title">Projects</h2>
+                <ul class="project_link">
+                    <li class="projekt_Link-text"><a href="https://rolling-scopes-school.github.io/burma-olga-JSFEPRESCHOOL2022Q2/travel/" target="_blank">Travel</a></li>
+                    <li class="projekt_Link-text"><a href="https://rolling-scopes-school.github.io/burma-olga-JSFEPRESCHOOL2022Q2/momentum/" target="_blank">Momentum</a></li>
+                    <li class="projekt_Link-text"><a href="https://burma-olga.github.io//codejam-eldritch/" target="_blank">Codejam</a></li>
+                </ul>
+            </div>
+        </section> 
+        </main>
+        <footer class="footer">
+            <div class="footer_container">
+                <a href="https://github.com/Burma-Olga"><img class="github_logo" src="git_black.svg" alt="GitHub"></a>
+                <p><b>&copy; 2022</b></p>
+                <a href="https://rs.school/js/"><img class="rsschool_logo" src="rss_black.svg" alt="RSSchool"></a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
