@@ -129,9 +129,12 @@ body{
     font-size: 24px;
     line-height: 38px;
 }
-.code_text-info{
+.code_text{
     border: solid #9f9d9d;
     border-width: 1px;
+}
+.code_js{
+    padding-left: 15px;
 }
 .projekt_Link-text a{
     color: #383434;
