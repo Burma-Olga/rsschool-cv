@@ -55,6 +55,16 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 20px;
+    min-width: 200px;
+}
+.mine_image{
+    width: 100%;
+}
+.ava_image{
+    width: 100%;
+}
+.mine_mobile{
+    display: none;
 }
 .contacts, .language, .profile, .educacion, .skills, .code, .projects{
     padding: 20px 0 10px;
@@ -68,7 +78,6 @@ body{
     right: 0;
     background:rgba(255, 255, 255, 1);
     border-radius: 5px;
-
 }
 .language_title:after{
     content: "";
@@ -93,7 +102,7 @@ body{
 .mine_prof{
     font-size: 20px;
 }
-.contacts_title, .language_title, .skills_title{
+.contacts_title, .language_title, .skills_title, .mine_mobile{
     color:rgba(255, 255, 255, 1);
 }
 .contacts_text-info, .language_text-info, .skills_text-info{
@@ -144,18 +153,18 @@ body{
 }
 .github_logo{
     transition: .5s;
-    filter: invert(100%);
+    filter: invert(0%);
     height: 50px;
 }
 .github_logo:hover{
-    filter: invert(0%);
+    filter: invert(100%);
 }
 .rsschool_logo{
     transition: .5s;
-    filter: invert(100%);
+    filter: invert(0%);
 }
 .rsschool_logo:hover{
-    filter: invert(0%);
+    filter: invert(100%);
 }
 b{
     color:rgb(235, 10, 52);
@@ -166,4 +175,76 @@ b{
 .header_nav-list{
     padding-left: 10px;
 }
+.contacts, .language, .profile, .educacion, .skills, .code, .projects{
+    padding: 10px 0 10px;
+}
+}
+@media (max-width: 680px){
+body{
+    font-size: 14px;
+    line-height: 18px;
+}
+.mine_title{
+    font-size: 40px;
+    font-weight: 500;
+}
+.contacts, .language, .profile, .educacion, .skills, .code, .projects{
+    padding: 5px 0 5px;
+}
+}
+@media (max-width: 600px){
+.main{
+    display: block;
+}
+.header_nav-item{
+    display: none;
+}
+.mine_image{
+    width: 100%;
+    display: flex;
+}
+.ava_image{
+    width: 40%;
+}
+.mine_mobile{
+    display: block;
+    padding-left: 15px;
+    padding-top: 50px;
+}
+.mine_title-mobile{
+    font-size: 35px;
+    font-weight: 500;
+}
+.mine_prof-mobile{
+    font-size: 18px;
+}
+.header_nav-list{
+    height: 10px;
+    padding: 10px;
+}
+.mine{
+    display: none;
+}
+}
+@media (max-width: 440px){
+ .code_js{
+    font-size: 13px;
+    line-height: 17px;
+}
+.mine_title-mobile{
+    font-size: 30px;
+    font-weight: 500;
+} 
+.mine_prof-mobile{
+    font-size: 17px;
+}
+}
+@media (max-width: 380px){
+.mine_title-mobile{
+    font-size: 24px;
+    font-weight: 400;
+} 
+.mine_prof-mobile{
+    font-size: 14px;
+}   
 }
