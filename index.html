@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header_container">
+                <nav class="nav">
+                    <ul class="header_nav-list">
+                        <li class="header_nav-item"><a href="#about">About</a></li>
+                        <li class="header_nav-item"><a href="#education">Education</a></li>
+                        <li class="header_nav-item"><a href="#skills">Skills</a></li>
+                        <li class="header_nav-item"><a href="#code">Code</a></li>
+                        <li class="header_nav-item"><a href="#projects">Projects</a></li>
+                        <li class="header_nav-item"><a href="#language">Language</a></li>
+                        <li class="header_nav-item"><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+        <section class="container_left">
+            <div class="mine_image">
+                <img class="ava_image" src="Photo-Olga.png" alt="ava">
+                <div class="mine_mobile">
+                    <h2 class="mine_title-mobile">Olga Lapteva</h2>  
+                    <div class="mine_prof-mobile">
+                    <p>Front-End Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts" id="contacts">
+                <h2 class="contacts_title">Contacts</h2>
+                <ul class="contacts_text">
+                    <li class="contacts_text-info">Location: Belarus, Grodno</li>
+                    <li class="contacts_text-info">Discord: Burma-Olga</li>
+                    <li class="contacts_text-info">Tel: +375297849292</li>
+                    <li class="contacts_text-info">Email: Burma_Olga@bk.ru</li>
+                </ul>
+            </div>
+            <div class="language" id="language">
+                <h2 class="language_title">Language</h2>
+                <ul class="language_text">
+                    <li class="language_text-info">English - B1</li>
+                    <li class="language_text-info">Polish - B1</li>
+                    <li class="language_text-info">Russian - native</li>
+                    <li class="language_text-info">Belorussian - native</li>
+                </ul>
+            </div>
+            <div class="skills" id="skills">
+                <h2 class="skills_title">Skills</h2>
+                <ul class="skills_text">
+                    <li class="skills_text-info">HTML</li>
+                    <li class="skills_text-info">CSS</li>
+                    <li class="skills_text-info">JavaScript</li>
+                    <li class="skills_text-info">Git</li>
+                </ul>
+            </div>
+        </section>  
+        <section class="container_right">
+            <div class="mine">
+                <h2 class="mine_title">Olga Lapteva</h2>  
+                <div class="mine_prof">
+                <p>Front-End Developer</p>
+                </div>
+            </div>
+            <div class="profile" id="about">
+                <h2 class="profile_title">About me</h2>
+                <div class="profile_text">
+                    <p>There is no work experience, but there is a desire for change and determination</p>
+                </div>
+            </div>
+            <div class="educacion" id="education">
+                <h2 class="education_title">Education</h2>
+                <div class="education_fext">
+                    <p>In 2021 I graduated from the Grodno University, I received a second higher education, 
+                        I have a specialty software engineer</p>
+                </div>
+            </div>
+            <div class="code" id="code">
+                <h2 class="code_title">Code example</h2>
+                <div class="code_text">
+<pre class="code_js" style="font-family:monospace;"><span style="color: #000066; font-weight: bold;">function</span> isPrime<span style="color: #009900;">&#40;</span>num<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    let sqrt <span style="color: #339933;">=</span> <span>Math</span>.<span style="color: #660066;">sqrt</span><span style="color: #009900;">&#40;</span>num<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+    <span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span>num<span style="color: #339933;">&lt;=</span><span style="color: #CC0000;">1</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+        <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">;</span>
+    <span style="color: #009900;">&#125;</span>
+    <span style="color: #000066; font-weight: bold;">for</span><span style="color: #009900;">&#40;</span>let i<span style="color: #339933;">=</span><span style="color: #CC0000;">2</span><span style="color: #339933;">;</span> i <span style="color: #339933;">&lt;=</span> sqrt<span style="color: #339933;">;</span> i<span style="color: #339933;">++</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+        <span style="color: #000066; font-weight: bold;">if</span><span style="color: #009900;">&#40;</span>num <span style="color: #339933;">%</span> i <span style="color: #339933;">===</span> <span style="color: #CC0000;">0</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+            <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">;</span>
+        <span style="color: #009900;">&#125;</span>
+    <span style="color: #009900;">&#125;</span>
+    <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #003366; font-weight: bold;">true</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">&#125;</span></pre>
+                </div>
+            </div>
+            <div class="projects" id="projects">
+                <h2 class="projects_title">Projects</h2>
+                <ul class="project_link">
+                    <li class="projekt_Link-text"><a href="https://rolling-scopes-school.github.io/burma-olga-JSFEPRESCHOOL2022Q2/travel/" target="_blank">Travel</a></li>
+                    <li class="projekt_Link-text"><a href="https://rolling-scopes-school.github.io/burma-olga-JSFEPRESCHOOL2022Q2/momentum/" target="_blank">Momentum</a></li>
+                    <li class="projekt_Link-text"><a href="https://burma-olga.github.io//codejam-eldritch/" target="_blank">Codejam</a></li>
+                </ul>
+            </div>
+        </section> 
+        </main>
+        <footer class="footer">
+            <div class="footer_container">
+                <a href="https://github.com/Burma-Olga"><img class="github_logo" src="git_white.svg" alt="GitHub"></a>
+                <p><b>&copy; 2022</b></p>
+                <a href="https://rs.school/js/"><img class="rsschool_logo" src="rss_white.svg" alt="RSSchool"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
